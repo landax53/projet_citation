@@ -42,8 +42,32 @@ const totalVies = 3;
 let vies = totalVies;
 let divVies = document.querySelector('.coeurs');
 
+// Au "click" du bouton "Enregistrer", on exécute la fonction qui enregistrer les données du philosophe
+newData();
+function newData() {
+    const enregistrerBtn = document.getElementById('enregistrer')
+    enregistrerBtn.addEventListener('click', () => {
+        const nom = document.getElementById('nom').value;
+        const prenom = document.getElementById('prenom').value;
+        const citation = document.getElementById('citation').value;
+        //const image = document.getElementById('image').value;
+        const data = { nom , prenom , citation};
 
+        const options = {
+            method : 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify(data)
 
+        }
+        fetch('/api', options).then(response => {
+            console.log(response);
+        });
+        console.log(citation);
+
+    })
+}
 
 // Au 'click' de 'Générer une citation' -> ajouter la citation au paragraphe
 function newCitation() {

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<!-- HEAD -->
+    <head>
+        <meta charset="utf-8" />
+        <title> Générateur de citation </title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+<!-- BODY -->
+    <body>
+        <div id="enregistrerCitation">
+            <h1> Enregistrer une citation dans la base de donnée : </h1>
+            <form action="" method="get" class="form">
+                <div class="auteur">
+                    <label for="nom">Nom du Philosophe :</label>
+                    <input type="text" name="nom" id="nom" placeholder="ex: Freud" required>
+                    <br/>
+                    <label for="prenom">Prénom du Philosophe :</label>
+                    <input type="text" name="prenom" id="prenom" placeholder="ex: Sigmund" required>
+                </div>
+
+                <div class="citation">
+                    <label for="citation">Citation du Philosophe :</label>
+                    <input type="text" name="citation" id="citation" placeholder="ex: “Les grandes choses peuvent se manifester par de petits signes.“" required>
+                </div>
+
+                <div class="imageAuteur">
+                    <label for="image">Insérer ici un portrait du Philosophe :</label>
+                    <input type="file" name="image" id="image" accept="image/png, image/jpeg" value="Choisir une image"/>
+                </div>
+
+                <input type="submit" id="enregistrer" value="Enregistrer le Philosophe et sa citation"/>
+
+            </form>
+        </div>
+
+        <p>----------------------------------------------------------------------------</p>
+        <h1> OU </h1>
+        <p>----------------------------------------------------------------------------</p>
+
+        <h1> Devinez qui est l'auteur de la citation :</h1>
+
+
+        <div id="generateButton">
+            <input id='myGenerate' type="submit" onclick="newCitation()" value="Générer une citation">        </div>
+                  
+        <div id="generate">        
+
+            <div id="rdmcitation"> </div>
+
+            <div id="question">  </div>
+            
+            <div id="mySelect">  </div>
+
+            <div class="selection">  </div>
+
+            <div class="images"></div>
+
+            <div id="myValidation">  </div>
+
+            <div class="result">  </div>
+
+            <div class="coeurs">              
+                <ion-icon name="heart-outline"></ion-icon>
+                <ion-icon name="heart"></ion-icon>
+             </div>
+
+        </div>
+
+        <button id="regenerateButton"> Reset </button>
+
+    <script type="text/javascript" src="app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    </body>
+
+</html>
+
+
+
