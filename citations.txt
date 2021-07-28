@@ -1,0 +1,7 @@
+auteur : "Karl Popper"
+
+citation : "La thèse du complot [...] est, sous sa forme moderne, la sécularisation des superstitions religieuses. Les dieux d’Homère, dont les complots expliquent la guerre de Troie, y sont remplacés par les monopoles, les capitalistes ou les impérialistes"
+
+
+auteur : "Friedrich Nietzsche"
+citation : "Au lieu de dire naïvement :‘JE n’ai plus aucune valeur’, le mensonge moral dit par la bouche du décadent : ‘rien n’a aucune valeur, la VIE n’a aucune valeur’…"
